@@ -1,17 +1,17 @@
 name: First Workflow
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-            uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-            - name: Display a message
-            run: echo "Hello, GitHub Actions!"
+      - name: Display a message
+        run: echo "Hello, GitHub Actions!"
